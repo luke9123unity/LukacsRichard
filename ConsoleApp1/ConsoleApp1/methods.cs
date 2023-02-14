@@ -1,4 +1,4 @@
-﻿double a = Math.Pow(2, 6);
+﻿/*double a = Math.Pow(2, 6);
 
 float b = Math.Abs(12.4f);
 float c = Math.Sign(-10); //előjel függvény pozitív esetén +1, negatív esetén -1 értékkel tér vissza
@@ -91,4 +91,4 @@ void MyMethod(int n)
     {
         Console.WriteLine(i);
     }
-}
+}*/

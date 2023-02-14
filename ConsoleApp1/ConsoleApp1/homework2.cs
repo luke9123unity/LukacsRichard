@@ -22,6 +22,8 @@ float Clamp01(float num){
 	}
 }
 
+float mynum = 21.5f;
+Console.WriteLine(Round(mynum));
 float Floor(float number){
 	int slicedNumber = (int)number;
 	return (float)slicedNumber;
@@ -47,15 +49,18 @@ float Round(float number){
 	}
 }
 
+int findNum = 21;
+Console.WriteLine(isPrime(findNum));
 bool isPrime(int num){
 	for(int i=2;i<Math.Sqrt(num);i++){
 		if(num%i==0){
-			return true;
+			return false;
 		}
 	}
-	return false;
+	return true;
 }
 
+Console.WriteLine(pitaNumber(5, 12, 13));
 bool pitaNumber(int a, int b, int c){
 	if(a*a+b*b==c*c||a*a+c*c==b*b||c*c+b*b==a*a){
 		return true;
