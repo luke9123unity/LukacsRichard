@@ -52,7 +52,7 @@ float Round(float number){
 int findNum = 21;
 Console.WriteLine(isPrime(findNum));
 bool isPrime(int num){
-	for(int i=2;i<Math.Sqrt(num);i++){
+	for(int i=2;i<=num/2;i++){
 		if(num%i==0){
 			return false;
 		}
@@ -67,3 +67,30 @@ bool pitaNumber(int a, int b, int c){
 	}
 	return false;
 }
+
+int SumOfNum(int n)
+{
+	string numString = n.ToString();
+	int result = 0;
+	for(int i = 0; i < numString.Length; i++)
+	{
+		result+= int.Parse(numString[i].ToString());
+	}
+	return result;
+}
+
+void nPrime(int n)
+{
+	int i = 2;
+	while(n > 0)
+	{
+		if (isPrime(i))
+		{
+			Console.WriteLine(i);
+			n--;
+		}
+		i++;
+	}
+}
+
+nPrime(100);
